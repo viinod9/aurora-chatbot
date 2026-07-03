@@ -2,7 +2,7 @@
 
 A beautiful, modern chatbot UI built with React and Vite. Dark glassmorphism design with smooth animations, typing indicators, and smart conversational responses.
 
-**Live Demo:** `https://<your-username>.github.io/aurora-chatbot/` *(available after deploy)*
+**[Live Demo](https://viinod9.github.io/aurora-chatbot/)**
 
 ![Aurora Chat](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-6-646CFF?logo=vite&logoColor=white)

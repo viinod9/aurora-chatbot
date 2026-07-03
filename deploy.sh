@@ -3,6 +3,8 @@ set -euo pipefail
 
 REPO_NAME="${1:-aurora-chatbot}"
 GH="${GH:-gh}"
+export GH_CONFIG_DIR="${GH_CONFIG_DIR:-$HOME/.gh-config}"
+mkdir -p "$GH_CONFIG_DIR"
 
 if ! command -v "$GH" &>/dev/null; then
   echo "GitHub CLI (gh) is required. Install: brew install gh"
@@ -10,7 +12,8 @@ if ! command -v "$GH" &>/dev/null; then
 fi
 
 if ! "$GH" auth status &>/dev/null; then
-  echo "Not logged in to GitHub. Run: gh auth login"
+  echo "Not logged in to GitHub."
+  echo "Run: GH_CONFIG_DIR=\"\$HOME/.gh-config\" gh auth login"
   exit 1
 fi
 
